@@ -1,0 +1,30 @@
+class Test {
+    int num = 3;
+
+    public void set() {
+        num++;
+    }
+
+    public void get() {
+        System.out.println(num);
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+        Test ob1 = new Test();
+        Test ob2 = new Test();
+        Test ob3 = new Test();
+
+        ob1.set();
+        ob1.set();
+        ob2.set();
+        ob3.set();
+        ob3.set();
+        ob3.set();
+
+        ob1.get();
+        ob2.get();
+        ob3.get();
+    }
+}
